@@ -27,6 +27,8 @@ def results():
 
     all_data = json.loads(req.content)
     num_tracks = len(all_data['items'])
+    if num_tracks < 2:
+    	return render_template('no_tracks.html')
 
     popularity_sum = 0
     for i in range(num_tracks):
