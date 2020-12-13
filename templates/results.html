@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
+    <link rel="stylesheet" href="/static/index.css" />
+    <title>How hipster is your music taste?</title>
+    <meta name="description" content="How hipster is your music taste?">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <h1 class="title">How hipster is your music taste?</h1>
+            <p class="hipster_label">{{results.hipster}}</p>
+            <h2>Your most hipster track</h2>
+
+            <div class=song_item>
+                <img src="{{results.hipster_art_url}}" alt="">
+                <div class="content">
+                    <div>
+                        <p>{{results.hipster_track_name}}</p>
+                        <p>{{results.hipster_artist_name}}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Your most mainstream track</h2>
+
+            <div class=song_item>
+                <img src="{{results.mainstream_art_url}}" alt="">
+                <div class="content">
+                    <div>
+                        <p>{{results.mainstream_track_name}}</p>
+                        <p>{{results.mainstream_artist_name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

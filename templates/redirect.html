@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
+    <link rel="stylesheet" href="/static/index.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <h1>How hipster is your music taste?</h1>
+            Please wait...
+        </div>
+    </div>
+</body>
+<script>
+    setTimeout(() => {
+        window.location = "/results?" + window.location.hash.slice(1, window.location.hash.length);
+    }, 500);
+</script>
+
+</html>
